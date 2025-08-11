@@ -1,0 +1,1 @@
+export {default as JwtDecode} from './jwtDecode/script.js'

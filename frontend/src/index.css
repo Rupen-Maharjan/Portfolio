@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+body{
+    @apply bg-black text-white
+}
+
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+   /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+  }
+}
+
+@layer base {
+  input[type="password"]::-ms-reveal,
+  input[type="password"]::-webkit-reveal,
+  input[type="password"]::-webkit-password-reveal-button,
+  input[type="password"]::-webkit-credentials-auto-fill-button {
+    display: none !important;
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    appearance: none;
+  }
+}
+
