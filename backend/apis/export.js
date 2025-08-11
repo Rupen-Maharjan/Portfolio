@@ -10,3 +10,7 @@ export {default as Project} from './projects/route.js'
 // Personal info
 export {default as Image} from './image/route.js'
 export {default as Basic} from './basicInfo/route.js'
+
+
+// home
+export {default as Home} from "./home/route.js"

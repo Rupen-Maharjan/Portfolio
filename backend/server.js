@@ -1,6 +1,6 @@
 import express from 'express';
 import session from 'express-session';
-import { Basic, Image, Login,Project, Register } from './apis/export.js';
+import { Basic, Home, Image, Login,Project, Register } from './apis/export.js';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import { connect } from './database/connect.js';
@@ -29,6 +29,7 @@ app.use(cors({
 
 connect();
 
+app.use('/',Home)
 app.use('/api/login', Login);
 app.use('/api/register',Register)
 app.use('/admin/projects',Project);
